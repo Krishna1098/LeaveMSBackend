@@ -67,11 +67,6 @@ namespace LeaveMS.Models
 
                 entity.Property(e => e.LeavesInHand).HasColumnName("leavesInHand");
 
-                entity.Property(e => e.Leavestatus)
-                    .IsRequired()
-                    .HasColumnName("leavestatus")
-                    .HasDefaultValueSql("('TRUE')");
-
                 entity.Property(e => e.Location)
                     .HasMaxLength(100)
                     .IsUnicode(false)
