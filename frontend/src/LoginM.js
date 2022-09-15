@@ -18,7 +18,7 @@ export class LoginM extends Component {
                 <div className="input-group mb-3">
             <span className="input-group-text">LoginId</span>
             <input type="text" className="form-control"
-            value={"admin"}/>
+            value={"100"}/>
         </div>
         <div className="input-group mb-3">
             <span className="input-group-text">Password</span>
