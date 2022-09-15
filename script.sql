@@ -53,12 +53,7 @@ alter table Leave add status varchar(120) not null default 'pending'
 
 alter table Employee add department varchar(100),designation varchar(100),location varchar(100)
 
-update Employee set department='.net',designation='Software developer',location='chennai' where empName='vry'
-update Employee set department='.net',designation='Software developer',location='chennai' where empName='shanmkhi'
 
-update Employee set department='.net',designation='Software developer',location='chennai' where empName='chinmay'
-
-update Employee set department='.net',designation='Software developer',location='chennai' where empName='akshat'
 
 
  
@@ -68,6 +63,13 @@ insert into Manager values('Amlan'),('Narmadha')
 insert into Employee values('krishna','kk@gmail.com',20,'TRUE') 
 insert into Employee values('shanmkhi','SS@gmail.com',25,'False') 
 insert into Employee values('chinmay','CT@gmail.com',10,'TRUE') 
+
+update Employee set department='.net',designation='Software developer',location='chennai' where empName='vry'
+update Employee set department='.net',designation='Software developer',location='chennai' where empName='shanmkhi'
+
+update Employee set department='.net',designation='Software developer',location='chennai' where empName='chinmay'
+
+update Employee set department='.net',designation='Software developer',location='chennai' where empName='akshat'
  
  
 insert into Leave(empId,managerId,fromDate,toDate,leaveType,leaveDescription) values(1,100,'2022-09-01','2022-09-06','casual','covid') 
