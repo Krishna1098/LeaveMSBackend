@@ -73,7 +73,7 @@ update Employee set department='.net',designation='Software developer',location=
  
  
 insert into Leave(empId,managerId,fromDate,toDate,leaveType,leaveDescription) values(1,100,'2022-09-01','2022-09-06','casual','covid') 
-insert into Leave(empId,managerId,fromDate,toDate,leaveType,leaveDescription) values(2,101,'2022-09-01','2022-09-07','casual','covid') 
+insert into Leave(empId,managerId,fromDate,toDate,leaveType,leaveDescription) values(1,101,'2022-09-01','2022-09-07','casual','covid') 
 insert into Leave(empId,managerId,fromDate,toDate,leaveType,leaveDescription) values(1,100,'2022-09-01','2022-09-10','earned','covid')
 
 
