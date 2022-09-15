@@ -2,7 +2,8 @@ use LMSone
 
 create table Manager( 
 managerId int identity(100,1), 
-mName varchar(120) not null 
+mName varchar(120) not null,
+primary key(managerId)
 ); 
  
  
@@ -11,9 +12,9 @@ empid int identity(1,1),
 empName varchar(120) not null, 
 email varchar(120) not null, 
 leavesInHand int not null, 
-leavestatus Bit not null default 'TRUE' 
+leavestatus Bit not null default 'TRUE', 
  
- 
+primary key(empid) 
 );
 
 create table Login(LoginId int primary key,password varchar(50))
