@@ -41,14 +41,12 @@ NoOfDays As DATEDIFF(DAY,fromDate,toDate)- (datediff(wk, fromDate, toDate) * 2) 
 primary key(leaveid)
 ); 
 
-drop table leave
 
 
  
  
 alter table Leave add constraint fk_Employee_1 foreign key(empId) references Employee(empid); 
-alter table Leave add constraint fk_manager_1 foreign key(managerId) references Manager(managerId); 
-alter table Leave add id int not null unique; 
+alter table Leave add constraint fk_manager_1 foreign key(managerId) references Manager(managerId);  
 alter table Leave add status varchar(120) not null default 'pending'
 
 
